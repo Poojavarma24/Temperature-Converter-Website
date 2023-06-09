@@ -1,43 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temperature Converter</title>
-    <link rel="stylesheet" href="Temperature_convertor.css">
-</head>
+		<link rel="stylesheet" href="./style.css">
 
-<body>
-    <div class="container">
-        <div class="title">
-            <h1>Convert Temperature</h1>
-            <span class="Temperatur-icon"><i class='fas fa-temperature-high'></i></span>
-        </div>
+		<script defer src="./script.js"></script>
 
-        <div id="celcius">
-            <input type="number" name="" placeholder="Celcius">
-            <span class="icon">&#8451</span>
-        </div>
-        
-        <div id="kelvin">
-            <input type="number" name="" placeholder="Kelvin">
-            <span class="icon">&#8490</span>
-        </div>
+		<title>Temperature Converter</title>
+	</head>
 
-        <div id="fahrenheit">
-            <input type="number" name="" placeholder="Fahrenheit">
-            <span class="icon">&#8457</span>
-        </div>
-        
-        <div class="buttonContainer">
-            <button id="change">Convert</button>
-            <button id="clear">All Clear</button>
-        </div>
-    </div>
-    <div class = "imageContainer"><img src="temp.jpg"> </div>
-    <script src="Temperature_convertor.js"></script>
-</body>
-
+	<body>
+		
+		<h1>Temperature Converter</h1>
+		<div id="temp-conv">
+			<label for="celsius">Temp in &#176;C</label>
+			<input id="celsius-ip" type="number" onfocus="changeFocus1(1)">
+			<br>
+			
+			<label for="fahrenheit">Temp in &#176;F</label>
+			<input id="fahrenheit-ip" type="number" onfocus="changeFocus1(2)">
+			<br>
+	
+			<button id="temp-conv-btn">Convert</button>
+		</div>
+		
+		
+	</body>
 </html>
